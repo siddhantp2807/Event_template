@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --theme-grey: #333;
+    --theme-white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-position: top;
+    background-repeat: no-repeat; */
+}
+
+/* Navbar CSS begins here */
+header {
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+}
+
+.logo {
+    margin: 0.5rem 0.5rem 0.5rem 2.5rem;
+    /* width: 100%; */
+    /* margin: 0.5rem; */
+    /* z-index: 5; */
+}
+
+ion-icon {
+    font-size: 2.4rem;
+}
+
+.navbar_items {
+    position: relative;
+    margin-right: 2rem;
+    /* transition: height 200ms ease; */
+}
+
+.navbar_items ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.navbar_items li {
+    list-style: none;
+}
+
+.navbar_items li a {
+    text-decoration: none;
+    color: white;
+    padding: 1.2rem;
+    display: block;
+    font-size: 1.15rem;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 940px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar_items {
+        position: absolute;
+        top: -100vh;
+        display: flex;
+        width: 100%;
+        transition: top 400ms ease-in;
+        background-color: #333;
+        z-index: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_items ul {
+        width: 100%;
+        flex-direction: column;
+        margin-left: 1.7rem;
+    }
+
+    .active {
+        top: 3.2rem;
+        display: flex;
+    }
+}
+
+
+/* Navbar CSS ends here */
+
+/* Heading section CSS begins here */
+
+main {
+    z-index: -2;
+}
+
+.heading-section {
+    text-align: center;
+    padding-top: 8%;
+}
+
+.main-heading {
+    font-family: 'Space Mono', monospace;
+    font-size: 6em;
+    font-weight: bold;
+    color: var(--theme-grey);
+    margin: 0;
+}
+
+.dates {
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--theme-grey);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin: auto;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.generic-btn {
+    border: solid var(--theme-grey) 2px;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: var(--theme-white);
+    color: var(--theme-grey);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 3% 0 3% 0;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+}
+
+.generic-btn:hover {
+    background-color: var(--theme-grey);
+    color: var(--theme-white);
+}
+/* Heading section CSS ends here */
