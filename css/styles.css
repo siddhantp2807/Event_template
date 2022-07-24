@@ -17,7 +17,18 @@ body {
     background-repeat: no-repeat; */
 }
 
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+.separator {
+    max-width: 60%;
+    margin: 20px auto 5px;
+}
+
 /* Navbar CSS begins here */
+
 header {
     z-index: 10;
 }
@@ -151,13 +162,14 @@ main {
     display: flex;
     flex-direction: column;
     width: 15%;
-    margin: auto;
+    min-width: fit-content;
     margin: auto;
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
-.generic-btn {
+.generic-btn,
+.btn {
     border: solid var(--theme-grey) 2px;
     border-radius: 5px;
     font-size: 1em;
@@ -165,15 +177,158 @@ main {
     color: var(--theme-grey);
     margin-top: 5%;
     margin-bottom: 5%;
-    padding: 3% 0 3% 0;
+    padding: 3%;
     cursor: pointer;
     transition: all 200ms ease-in-out;
     font-family: 'Space Mono', monospace;
     font-weight: bold;
 }
 
-.generic-btn:hover {
+.generic-btn:hover,
+.btn:hover,
+.btn.active {
     background-color: var(--theme-grey);
     color: var(--theme-white);
 }
+
 /* Heading section CSS ends here */
+
+/* Schedule section CSS begins here */
+
+#schedule {
+    width: 80%;
+    margin: auto;
+}
+
+#sch-title {
+    text-align: center;
+    padding-top: 4%;
+    color: var(--theme-grey);
+    font-size: 35px;
+    font-family: 'Space Mono', monospace;
+}
+
+#sch-details {
+    text-align: center;
+    line-height: 170%;
+    width: 78%;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sch-buttons {
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    min-width: fit-content;
+}
+
+.sch-buttons .btn {
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.sch-buttons a {
+    text-decoration: none;
+}
+
+.sch-buttons a:visited {
+    color: inherit;
+}
+
+.sch-buttons #btn-l {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.sch-buttons #btn-r {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.event-timeline {
+    width: 800px;
+    /*background-color: #072736;*/
+    /*color: #fff;*/
+    padding: 0px 20px;
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);*/
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.event-timeline ul {
+    list-style-type: none;
+    border-left: 2px solid #000;
+    padding: 10px 5px;
+}
+
+.event-timeline ul li {
+    border-radius: 10px;
+    padding: 20px 20px;
+    position: relative;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.event-timeline ul li span {
+    display: inline-block;
+    background-color: var(--theme-grey);
+    color: var(--theme-white);
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.event-timeline ul li .event-details h3 {
+    color: var(--theme-grey);
+    font-size: 17px;
+    padding-top: 5px;
+}
+
+.event-timeline ul li .event-details p {
+    padding: 5px 0px 15px 0px;
+    font-size: 15px;
+}
+
+.event-timeline ul li:before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    left: -11px;
+    top: 28px;
+    transition: .5s;
+}
+
+.event-timeline ul li:hover {
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.event-timeline ul li:hover:before {
+    background-color: #00ffff;
+    box-shadow: 0px 0px 10px 2px #00ffff;
+}
+
+@media (max-width:940px) {
+    .event-timeline {
+        width: 100%;
+        padding: 30px 5px 30px 10px;
+    }
+
+    .event-timeline ul li .event-details h3 {
+        color: var(--theme-grey);
+        font-size: 15px;
+    }
+
+}
+
+/* Schedule section CSS ends here */
