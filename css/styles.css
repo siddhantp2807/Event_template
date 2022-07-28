@@ -139,6 +139,29 @@ main {
     margin: 0;
 }
 
+.sub-heading {
+	text-align: center;
+    padding-top: 8%;
+    font-family: 'Space Mono', monospace;
+    font-size: 4em;
+    font-weight: bold;
+    color: var(--theme-grey);
+    margin: 0;
+}
+
+.paragraphs {
+	text-align: center;
+    padding-top: 2%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 2%;
+    font-family: 'Space Mono', monospace;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--theme-grey);
+    margin: 0;
+}
+
 .dates {
     margin: 0;
     font-family: 'Space Mono', monospace;
@@ -176,4 +199,44 @@ main {
     background-color: var(--theme-grey);
     color: var(--theme-white);
 }
+.cent {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 /* Heading section CSS ends here */
+
+/*--------------------*/
+/* SPONSORS */
+/*--------------------*/
+
+#mu-sponsors {
+	background-color: #fff;
+	display: inline;
+	float: center;
+	width: 100%;
+}
+
+.mu-sponsors-area {
+	display: inline;
+	float: center;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-sponsors-content {
+	display: inline;
+	float: center;
+	margin-top: 50px;
+	width: 100%;
+}
+
+.mu-sponsors-single {
+	background: #eee;
+	display: inline;
+	float: center;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	width: 100%;
+}
