@@ -242,14 +242,8 @@ main {
 }
 .sponsors-container{
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	flex-wrap: wrap;
-}
-.logo{
-	colour: white;
-	background-colour: white;
-	padding: 1%;
-	margin: 2%;
 }
 
 #mu-contact {
@@ -302,6 +296,7 @@ main {
 	height: 45px;
 	width: 70%;
 	margin-bottom: 24px;
+    padding: 10px;
 }
 
 .mu-contact-form .form-group textarea {
