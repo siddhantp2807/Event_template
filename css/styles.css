@@ -211,6 +211,12 @@ main {
   margin-right: auto;
   width: 50%;
 }
+
+@media (min-width: 1200px) {
+    .paragraphs {
+        font-size: 1.15em;
+    }
+}
 /* Heading section CSS ends here */
 
 /*--------------------*/
@@ -386,6 +392,33 @@ main {
         padding: 0;
     }
 }
+
+.icon-section {
+    display: flex;
+    width: 80%;
+    margin: 5% 10% 2% 10%;
+    justify-content: center;
+}
+
+.icon-section div {
+    margin: 0 2%;
+}
+
+.icon-section div ion-icon {
+    font-size: 1.75rem;
+    color: var(--theme-white);
+    cursor: pointer;
+    border: 2px solid var(--theme-grey);
+    border-radius: 50%;
+    padding: 15%;
+    background-color: var(--theme-grey);
+    transition: all 300ms ease-in;
+}
+
+.icon-section div ion-icon:hover {
+    color: var(--theme-grey);
+    background-color: transparent;
+}
 /* Sponsors section CSS ends here */
 
 /*Speakers section begins here*/
@@ -479,3 +512,28 @@ main {
 
 /*Speaker section ends here*/
 
+/* About Section CSS */
+
+.about-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.about-section div {
+    padding: 5%;
+}
+.about-section div img {
+    width: 100%;
+}
+
+@media (max-width: 940px) {
+    .about-section {
+        grid-template-columns: 1fr;
+        row-gap: 50;
+        column-gap: 0;
+    }
+}
+/* About Section CSS Ends here */
