@@ -3,6 +3,7 @@
 :root {
     --theme-grey: #333;
     --theme-white: #fff;
+    --theme-light-grey: #e6e6e6;
 }
 
 * {
@@ -126,6 +127,10 @@ main {
     z-index: -2;
 }
 
+.landing-section {
+    min-height: 90vh;
+}
+
 .heading-section {
     text-align: center;
     padding-top: 8%;
@@ -173,7 +178,7 @@ main {
 .buttons {
     display: flex;
     flex-direction: column;
-    width: 15%;
+    width: 200px;
     margin: auto;
     margin: auto;
     margin-top: 2%;
@@ -376,74 +381,100 @@ main {
 	      border-radius: 4px;
 }
 
-/* Heading section CSS ends here */
+@media (max-width: 650px) {
+    .mu-contact-content {
+        padding: 0;
+    }
+}
+/* Sponsors section CSS ends here */
 
 /*Speakers section begins here*/
 
-body {
-    min-height: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
 
 #OurSpeakers {
     text-align: center;
 }
 
 .Speakers {
-    padding:5% 5% 5% 5%;
-}
-
-h1 {
-    font-family: "Lucida Handwriting", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
-    size: 15ch;
+    display: grid;
+    margin: 0 5%;
+    width: 90%;
+    padding: 5% 0;
 }
 
 
 .Demo {
-    background-color: aliceblue;
-    width: 22%;
-    float: left;
-    margin-bottom: 16px;
-    margin-right: 1%;
-    /*padding: 0 8px;*/
+    background-color: var(--theme-light-grey);
+
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.Demo h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Space Mono", sans-serif;
+}
+
+.Demo p {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Space Mono", sans-serif;
+}
+
 @media screen and (max-width:650px) {
-  .Demo {
+  /* .Demo {
   width: 100%;
   display: block;
-}
+} */
+    .Speakers {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+        column-gap: 2rem;
+    }
 }
 
 @media screen and (min-width:651px ) {
-  .Demo {
+  /* .Demo {
   width: 48%;
   display: block;
-}
+} */
+    .Speakers {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3rem;
+        column-gap: 2rem;
+    }
 }
 
-
-@media screen and (min-width:800px ) {
-  .Demo {
-  width: 31%;
-  display: block;
-}
-}
 
 @media screen and (min-width:950px ) {
-  .Demo {
+  /* .Demo {
   width: 22%;
   display: block;
-}
+} */
+    .Speakers {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        row-gap: 3rem;
+    }
 }
 
 #text {
-    color: black;
+    color: var(--theme-grey);
+}
+
+.social {
+    margin: 10% 0;
+}
+.social ion-icon {
+    font-size: 30px;
+    margin: 0 5%;
+    color: var(--theme-grey);
+    cursor: pointer;
+    transition: all 300ms ease-in;
+}
+
+.social ion-icon:hover {
+    color: #000;
 }
 
 /*Speaker section ends here*/
