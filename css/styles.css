@@ -122,7 +122,7 @@ ion-icon {
         margin-left: 1.7rem;
     }
 
-    .active {
+    .active-btn {
         top: 3.2rem;
         display: flex;
     }
@@ -185,8 +185,7 @@ main {
 }
 
 .generic-btn:hover,
-.btn:hover,
-.btn.active {
+.btn.active-btn {
     background-color: var(--theme-grey);
     color: var(--theme-white);
 }
