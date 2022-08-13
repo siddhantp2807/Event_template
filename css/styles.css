@@ -280,7 +280,7 @@ main {
 	padding: 50px;
 }
 
-.mu-contact-content{
+.mu-contact-content, .rg-contact-content{
 	display: inline;
 	float: left;
 	margin-top: 50px;
@@ -289,7 +289,7 @@ main {
 }
 
 
-.mu-contact-form-area {
+.mu-contact-form-area, .rg-contact-form-area {
 	display: inline;
 	float: left;
 	width: 100%;
@@ -388,7 +388,7 @@ main {
 }
 
 @media (max-width: 650px) {
-    .mu-contact-content {
+    .mu-contact-content, .rg-contact-content {
         padding: 0;
     }
 }
@@ -507,7 +507,7 @@ main {
 }
 
 .social ion-icon:hover {
-    color: #000;
+    color: var(--theme-grey);
 }
 
 /*Speaker section ends here*/
