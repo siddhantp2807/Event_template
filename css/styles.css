@@ -203,16 +203,16 @@ main {
     text-align: center;
     padding-top: 4%;
     color: var(--theme-grey);
-    font-size: 35px;
+    font-size: 4em;
     font-family: 'Space Mono', monospace;
 }
 
 #sch-details {
     text-align: center;
     line-height: 170%;
-    width: 78%;
+    width: 80%;
     margin: auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Mono', sans-serif;
 }
 
 .sch-buttons {
@@ -239,16 +239,22 @@ main {
     color: inherit;
 }
 
-.sch-buttons #btn-l {
-    border-right: 0;
+.sch-buttons .btn-l {
+    border-right: solid #000 2px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
 
-.sch-buttons #btn-r {
+.sch-buttons .btn-r {
     border-left: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+}
+
+.sch-buttons .btn-m {
+    border-right: solid #000 2px;
+    border-left: 0;
+    border-radius: 0;
 }
 
 .event-timeline {
@@ -258,7 +264,7 @@ main {
     padding: 0px 20px;
     /*box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);*/
     margin: auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Mono', sans-serif;
 }
 
 .event-timeline ul {
@@ -315,6 +321,14 @@ main {
 .event-timeline ul li:hover:before {
     background-color: #00ffff;
     box-shadow: 0px 0px 10px 2px #00ffff;
+}
+
+.shown {
+    display: block;
+}
+
+.hidden {
+    display: none;
 }
 
 @media (max-width:940px) {
