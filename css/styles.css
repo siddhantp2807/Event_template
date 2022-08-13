@@ -537,3 +537,55 @@ main {
     }
 }
 /* About Section CSS Ends here */
+
+/* FAQ Section CSS begins here */
+.faq-section {
+    width: 80%;
+    margin: 5% 10%;
+}
+
+.faq-title-area {
+    margin-bottom: 5%;
+}
+
+.accordion__heading {
+    display: block;
+    width: 100%;
+    padding: 2%;
+    border: none;
+    border-bottom: 2px solid var(--theme-grey);
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    text-align: left;
+    color: var(--theme-grey);
+    transition: color 0.3s ease-in-out;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Space Mono", sans-serif;
+}
+
+.accordion__heading:hover, .accordion__heading:active, .accordion__heading:focus {
+    color: #000;
+}
+
+.accordion__heading ion-icon {
+    float: right;
+    font-size: 2rem;
+}
+
+.accordion__heading--active ion-icon{
+    transform: rotate(180deg);
+}
+
+.accordion__content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0 2%;
+    font-family: "Space Mono", sans-serif;
+    background: transparent;
+    font-size: 1rem;
+}
+
+/* FAQ Section CSS ends here */
