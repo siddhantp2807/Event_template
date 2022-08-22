@@ -761,3 +761,63 @@ main {
 }
 
 /* FAQ Section CSS ends here */
+
+/* Deans Section CSS */
+#deans {
+    width: 80%;
+    margin: 5% 10%;
+}
+
+.about-dean {
+    display: flex;
+    margin: 10% 0;
+}
+
+.img-part {
+    width: 40%;
+}
+
+.img-part img {
+    width: 80%;
+}
+
+.text-part {
+    width: 55%;
+    align-self: center;
+    font-size: 1.1rem;
+    font-family: "Space Mono", sans-serif;
+}
+
+p.dean-name {
+    font-size: 1.45rem !important;
+    font-family: "Space Mono", sans-serif;
+    font-weight: 700;
+}
+
+.no-img .text-part {
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .about-dean {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-dean div {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-part img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 540px) {
+    .sub-heading {
+        font-size: 3em;
+    }
+}
+/* Deans Section CSS ends here */
